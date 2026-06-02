@@ -1,0 +1,536 @@
+{
+  "replace": false,
+  "comment": "Magitech EMC integration for ProjectE (KURONAMI). Hand-set primitives + transcribed zardius/spell/athanor recipes. Tools/parts/active-gear have no EMC.",
+  "values": {
+    "before": [
+      {
+        "type": "projecte:item",
+        "emc_value": 32,
+        "id": "magitech:celifern_log"
+      },
+      {
+        "type": "projecte:item",
+        "emc_value": 32,
+        "id": "magitech:charcoal_birch_log"
+      },
+      {
+        "type": "projecte:item",
+        "emc_value": 32,
+        "id": "magitech:celifern_sapling"
+      },
+      {
+        "type": "projecte:item",
+        "emc_value": 32,
+        "id": "magitech:charcoal_birch_sapling"
+      },
+      {
+        "type": "projecte:item",
+        "emc_value": 1,
+        "id": "magitech:celifern_leaves"
+      },
+      {
+        "type": "projecte:item",
+        "emc_value": 1,
+        "id": "magitech:charcoal_birch_leaves"
+      },
+      {
+        "type": "projecte:item",
+        "emc_value": 32,
+        "id": "magitech:stripped_celifern_log"
+      },
+      {
+        "type": "projecte:item",
+        "emc_value": 32,
+        "id": "magitech:stripped_charcoal_birch_log"
+      },
+      {
+        "type": "projecte:item",
+        "emc_value": 16,
+        "id": "magitech:mistalia_petals"
+      },
+      {
+        "type": "projecte:item",
+        "emc_value": 4,
+        "id": "magitech:scorched_soil"
+      },
+      {
+        "type": "projecte:item",
+        "emc_value": 4,
+        "id": "magitech:scorched_grass_soil"
+      },
+      {
+        "type": "projecte:item",
+        "emc_value": 16,
+        "id": "magitech:mana_berries"
+      },
+      {
+        "type": "projecte:item",
+        "emc_value": 128,
+        "id": "magitech:raw_zinc"
+      },
+      {
+        "type": "projecte:item",
+        "emc_value": 512,
+        "id": "magitech:chromium_ingot"
+      },
+      {
+        "type": "projecte:item",
+        "emc_value": 64,
+        "id": "magitech:sulfur"
+      },
+      {
+        "type": "projecte:item",
+        "emc_value": 256,
+        "id": "magitech:fluorite"
+      },
+      {
+        "type": "projecte:item",
+        "emc_value": 384,
+        "id": "magitech:tourmaline"
+      },
+      {
+        "type": "projecte:item",
+        "emc_value": 256,
+        "id": "magitech:redstone_crystal"
+      },
+      {
+        "type": "projecte:item",
+        "emc_value": 256,
+        "id": "magitech:polished_redstone_crystal"
+      },
+      {
+        "type": "projecte:item",
+        "emc_value": 768,
+        "id": "magitech:fluorite_crystal_cluster"
+      },
+      {
+        "type": "projecte:item",
+        "emc_value": 768,
+        "id": "magitech:redstone_crystal_cluster"
+      },
+      {
+        "type": "projecte:item",
+        "emc_value": 192,
+        "id": "magitech:sulfur_crystal_cluster"
+      },
+      {
+        "type": "projecte:item",
+        "emc_value": 256,
+        "id": "magitech:aggregated_fluxia"
+      },
+      {
+        "type": "projecte:item",
+        "emc_value": 256,
+        "id": "magitech:aggregated_luminis"
+      },
+      {
+        "type": "projecte:item",
+        "emc_value": 256,
+        "id": "magitech:aggregated_noctis"
+      },
+      {
+        "type": "projecte:item",
+        "emc_value": 65536,
+        "id": "magitech:polished_frigidite"
+      },
+      {
+        "type": "projecte:item",
+        "emc_value": 65536,
+        "id": "magitech:polished_translucium"
+      },
+      {
+        "type": "projecte:item",
+        "emc_value": 65536,
+        "id": "magitech:polished_resonite"
+      },
+      {
+        "type": "projecte:item",
+        "emc_value": 98304,
+        "id": "magitech:polished_abyssite"
+      }
+    ]
+  },
+  "groups": {
+    "magitech_recipes": {
+      "comment": "Transcribed Magitech custom recipes for EMC derivation.",
+      "conversions": [
+        {
+          "count": 3,
+          "ingredients": [
+            {
+              "type": "projecte:item",
+              "id": "magitech:alchaefabric"
+            },
+            {
+              "type": "projecte:item",
+              "id": "minecraft:obsidian"
+            },
+            {
+              "type": "projecte:item",
+              "id": "magitech:glace_crystal"
+            },
+            {
+              "type": "projecte:item",
+              "id": "magitech:phantom_crystal"
+            },
+            {
+              "type": "projecte:item",
+              "id": "minecraft:chain"
+            },
+            {
+              "type": "projecte:item",
+              "id": "minecraft:gold_ingot",
+              "amount": 2
+            },
+            {
+              "type": "projecte:item",
+              "id": "minecraft:diamond"
+            }
+          ],
+          "output": {
+            "type": "projecte:item",
+            "id": "magitech:aegis_weave"
+          }
+        },
+        {
+          "ingredients": [
+            {
+              "type": "projecte:item",
+              "id": "minecraft:phantom_membrane"
+            }
+          ],
+          "output": {
+            "type": "projecte:item",
+            "id": "magitech:alchaefabric"
+          }
+        },
+        {
+          "count": 4,
+          "ingredients": [
+            {
+              "type": "projecte:item",
+              "id": "minecraft:calcite"
+            },
+            {
+              "type": "projecte:item",
+              "tag": "c:gems/fluorite"
+            },
+            {
+              "type": "projecte:item",
+              "id": "minecraft:deepslate"
+            },
+            {
+              "type": "projecte:item",
+              "id": "minecraft:gold_ingot"
+            },
+            {
+              "type": "projecte:item",
+              "id": "magitech:magic_crystal"
+            }
+          ],
+          "output": {
+            "type": "projecte:item",
+            "id": "magitech:alchecrysite"
+          }
+        },
+        {
+          "ingredients": [
+            {
+              "type": "projecte:item",
+              "id": "magitech:mana_charged_fluorite"
+            },
+            {
+              "type": "projecte:item",
+              "tag": "magitech:aspect_crystal_base"
+            },
+            {
+              "type": "projecte:item",
+              "tag": "c:coal",
+              "amount": 2
+            }
+          ],
+          "output": {
+            "type": "projecte:item",
+            "id": "magitech:ember_crystal"
+          }
+        },
+        {
+          "count": 5,
+          "ingredients": [
+            {
+              "type": "projecte:item",
+              "id": "minecraft:ender_pearl"
+            },
+            {
+              "type": "projecte:item",
+              "id": "minecraft:iron_ingot",
+              "amount": 2
+            },
+            {
+              "type": "projecte:item",
+              "id": "minecraft:gold_ingot"
+            },
+            {
+              "type": "projecte:item",
+              "id": "minecraft:copper_ingot"
+            },
+            {
+              "type": "projecte:item",
+              "id": "magitech:hollow_crystal"
+            }
+          ],
+          "output": {
+            "type": "projecte:item",
+            "id": "magitech:ender_metal_ingot"
+          }
+        },
+        {
+          "ingredients": [
+            {
+              "type": "projecte:item",
+              "id": "magitech:mana_charged_fluorite"
+            },
+            {
+              "type": "projecte:item",
+              "tag": "magitech:aspect_crystal_base"
+            },
+            {
+              "type": "projecte:item",
+              "tag": "minecraft:saplings",
+              "amount": 2
+            }
+          ],
+          "output": {
+            "type": "projecte:item",
+            "id": "magitech:flow_crystal"
+          }
+        },
+        {
+          "ingredients": [
+            {
+              "type": "projecte:item",
+              "id": "magitech:mana_charged_fluorite"
+            },
+            {
+              "type": "projecte:item",
+              "tag": "magitech:aspect_crystal_base"
+            },
+            {
+              "type": "projecte:item",
+              "id": "minecraft:calcite",
+              "amount": 2
+            }
+          ],
+          "output": {
+            "type": "projecte:item",
+            "id": "magitech:glace_crystal"
+          }
+        },
+        {
+          "ingredients": [
+            {
+              "type": "projecte:item",
+              "id": "magitech:mana_charged_fluorite"
+            },
+            {
+              "type": "projecte:item",
+              "tag": "magitech:aspect_crystal_base"
+            },
+            {
+              "type": "projecte:item",
+              "id": "minecraft:ender_pearl",
+              "amount": 2
+            }
+          ],
+          "output": {
+            "type": "projecte:item",
+            "id": "magitech:hollow_crystal"
+          }
+        },
+        {
+          "ingredients": [
+            {
+              "type": "projecte:item",
+              "id": "magitech:mana_charged_fluorite"
+            },
+            {
+              "type": "projecte:item",
+              "tag": "magitech:aspect_crystal_base"
+            },
+            {
+              "type": "projecte:item",
+              "id": "minecraft:amethyst_shard",
+              "amount": 2
+            }
+          ],
+          "output": {
+            "type": "projecte:item",
+            "id": "magitech:magic_crystal"
+          }
+        },
+        {
+          "ingredients": [
+            {
+              "type": "projecte:item",
+              "tag": "c:gems/fluorite"
+            }
+          ],
+          "output": {
+            "type": "projecte:item",
+            "id": "magitech:mana_charged_fluorite"
+          }
+        },
+        {
+          "count": 2,
+          "ingredients": [
+            {
+              "type": "projecte:item",
+              "tag": "c:gems/mana_charged_fluorite"
+            },
+            {
+              "type": "projecte:item",
+              "id": "magitech:tourmaline",
+              "amount": 2
+            },
+            {
+              "type": "projecte:item",
+              "id": "minecraft:glass",
+              "amount": 2
+            }
+          ],
+          "output": {
+            "type": "projecte:item",
+            "id": "magitech:mana_insulating_glass"
+          }
+        },
+        {
+          "count": 4,
+          "ingredients": [
+            {
+              "type": "projecte:item",
+              "id": "minecraft:nether_star"
+            },
+            {
+              "type": "projecte:item",
+              "id": "minecraft:gunpowder"
+            },
+            {
+              "type": "projecte:item",
+              "id": "magitech:ember_crystal"
+            },
+            {
+              "type": "projecte:item",
+              "id": "magitech:magic_crystal"
+            },
+            {
+              "type": "projecte:item",
+              "id": "magitech:tremor_crystal"
+            }
+          ],
+          "output": {
+            "type": "projecte:item",
+            "id": "magitech:nether_star_brilliance"
+          }
+        },
+        {
+          "ingredients": [
+            {
+              "type": "projecte:item",
+              "id": "magitech:mana_charged_fluorite"
+            },
+            {
+              "type": "projecte:item",
+              "tag": "magitech:aspect_crystal_base"
+            },
+            {
+              "type": "projecte:item",
+              "id": "minecraft:phantom_membrane",
+              "amount": 2
+            }
+          ],
+          "output": {
+            "type": "projecte:item",
+            "id": "magitech:phantom_crystal"
+          }
+        },
+        {
+          "count": 2,
+          "ingredients": [
+            {
+              "type": "projecte:item",
+              "id": "magitech:nether_star_brilliance"
+            },
+            {
+              "type": "projecte:item",
+              "id": "minecraft:glowstone"
+            },
+            {
+              "type": "projecte:item",
+              "id": "minecraft:glow_ink_sac"
+            },
+            {
+              "type": "projecte:item",
+              "id": "minecraft:gold_ingot"
+            },
+            {
+              "type": "projecte:item",
+              "id": "minecraft:diamond",
+              "amount": 2
+            },
+            {
+              "type": "projecte:item",
+              "id": "magitech:glace_crystal",
+              "amount": 2
+            }
+          ],
+          "output": {
+            "type": "projecte:item",
+            "id": "magitech:radiant_steel_ingot"
+          }
+        },
+        {
+          "ingredients": [
+            {
+              "type": "projecte:item",
+              "id": "magitech:mana_charged_fluorite"
+            },
+            {
+              "type": "projecte:item",
+              "tag": "magitech:aspect_crystal_base"
+            },
+            {
+              "type": "projecte:item",
+              "id": "minecraft:copper_ingot",
+              "amount": 2
+            }
+          ],
+          "output": {
+            "type": "projecte:item",
+            "id": "magitech:surge_crystal"
+          }
+        },
+        {
+          "ingredients": [
+            {
+              "type": "projecte:item",
+              "id": "magitech:mana_charged_fluorite"
+            },
+            {
+              "type": "projecte:item",
+              "tag": "magitech:aspect_crystal_base"
+            },
+            {
+              "type": "projecte:item",
+              "id": "minecraft:deepslate",
+              "amount": 2
+            }
+          ],
+          "output": {
+            "type": "projecte:item",
+            "id": "magitech:tremor_crystal"
+          }
+        }
+      ]
+    }
+  }
+}
