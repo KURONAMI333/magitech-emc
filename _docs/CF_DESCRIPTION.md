@@ -19,4 +19,4 @@ It adds no items, blocks, or recipes — only EMC data. Values apply on world lo
 
 EMC values are a considered first pass; balance feedback is welcome on the issue tracker.
 
-MIT. Magitech is by Stln; ProjectE by sinkillerj & contributors. This is an independent integration, not affiliated with either. Source and issues: https://github.com/KURONAMI333/magitech-emc
+All Rights Reserved (free to put in any modpack, no permission or credit needed). Magitech is by Stln; ProjectE by sinkillerj & contributors. This is an independent integration, not affiliated with either. Source and issues: https://github.com/KURONAMI333/magitech-emc

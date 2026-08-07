@@ -85,7 +85,7 @@ tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8'
 }
 
-// Bundle the MIT LICENSE in the jar (renamed so it doesn't clash with host mods)
+// Bundle the LICENSE in the jar (renamed so it doesn't clash with host mods)
 def licenseRenamed = "LICENSE_${mod_id}"
 tasks.named('jar', Jar).configure {
     from('LICENSE') { rename { licenseRenamed } }
