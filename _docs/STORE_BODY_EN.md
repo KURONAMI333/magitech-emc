@@ -1,5 +1,3 @@
-# ProjectE: EMC for Magitech
-
 Play [Magitech -Arcane Engineering-](https://modrinth.com/mod/magitech_mod) with [ProjectE](https://modrinth.com/mod/projecte) and none of Magitech's ores, crystals, or alchemy products have an EMC value. This data-only add-on fixes that.
 
 Magitech builds most of its materials through custom alchemy recipes (the Zardius crucible, spell conversions, the athanor) that ProjectE can't read, and its ores have no EMC seed — so out of the box ProjectE ignores Magitech entirely. This teaches it:
@@ -15,9 +13,8 @@ It adds no items, blocks, or recipes — only EMC data. Values apply on world lo
 
 - [ProjectE](https://modrinth.com/mod/projecte) — required
 - [Magitech -Arcane Engineering-](https://modrinth.com/mod/magitech_mod) — required
-- NeoForge 1.21.1
 
-EMC values are a considered first pass; balance feedback is welcome on the issue tracker.
+EMC values are a considered first pass; balance feedback is welcome.
 
 Bugs and questions: comment on the CurseForge page, or DM @kuronami333 on X.
 
