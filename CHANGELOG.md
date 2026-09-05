@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.1.1
+
+- Moved the zinc anchor from Raw Zinc to the Zinc Ingot. ProjectE forces every item in the raw-materials tag to zero, so the old value never applied and the zinc line went unpriced. Smelting is one-to-one, so the value is unchanged.
+
 ## v0.1.0
 
 Initial release.
