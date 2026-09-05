@@ -47,14 +47,20 @@ BEFORE = {
     # 実行時に 0 を強制する（書いても消える）。値は精錬 1:1 の下流 zinc_ingot へ置く。
     "zinc_ingot": 128,
     "chromium_ingot": 512,
-    "sulfur": 64,
+    # sulfur は crafting_shapeless 1本で火薬2個（ProjectE 既定 192×2 = 384）になる
+    # （`gunpowder_from_sulfur.json`: c:gems/sulfur + charcoal(32) + bone_meal(48)）。
+    # 64 のままだと投入 144 に対し産出 384 で、実アイテムだけで回る増殖経路になっていた
+    # （2026-09-06 実機で ProjectE が EMC Exploit として検出）。損益分岐は 384-80 = 304。
+    "sulfur": 320,
     "fluorite": 256,
     "tourmaline": 384,
     "redstone_crystal": 256,
     "polished_redstone_crystal": 256,
     "fluorite_crystal_cluster": 768,
     "redstone_crystal_cluster": 768,
-    "sulfur_crystal_cluster": 192,
+    # sulfur を上げたので、設置→採掘で 1〜2 個落ちる cluster も 3 倍の比を保って上げる
+    # （192 のままだと cluster を錬成→設置→採掘で 320〜640 が戻り、値の層の外で増殖する）。
+    "sulfur_crystal_cluster": 960,
     "aggregated_fluxia": 256,
     "aggregated_luminis": 256,
     "aggregated_noctis": 256,

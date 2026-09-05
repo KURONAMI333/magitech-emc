@@ -75,7 +75,7 @@
       },
       {
         "type": "projecte:item",
-        "emc_value": 64,
+        "emc_value": 320,
         "id": "magitech:sulfur"
       },
       {
@@ -110,7 +110,7 @@
       },
       {
         "type": "projecte:item",
-        "emc_value": 192,
+        "emc_value": 960,
         "id": "magitech:sulfur_crystal_cluster"
       },
       {
