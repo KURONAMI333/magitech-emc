@@ -43,7 +43,9 @@ BEFORE = {
     "scorched_soil": 4,
     "scorched_grass_soil": 4,
     "mana_berries": 16,
-    "raw_zinc": 128,
+    # raw_zinc は c:raw_materials に属し、ProjectE の RawMaterialsBlacklistMapper が
+    # 実行時に 0 を強制する（書いても消える）。値は精錬 1:1 の下流 zinc_ingot へ置く。
+    "zinc_ingot": 128,
     "chromium_ingot": 512,
     "sulfur": 64,
     "fluorite": 256,
