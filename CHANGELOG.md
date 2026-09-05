@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.1.2
+
+- Raised Sulfur from 64 to 320 and the Sulfur Crystal Cluster from 192 to 960. One sulfur, one charcoal and one bone meal craft into two gunpowder, which ProjectE values at 192 each, so the old numbers turned 144 EMC of ingredients into 384 EMC of output on every craft. The cluster follows so that transmuting one and mining it stays a loss.
+
 ## v0.1.1
 
 - Moved the zinc anchor from Raw Zinc to the Zinc Ingot. ProjectE forces every item in the raw-materials tag to zero, so the old value never applied and the zinc line went unpriced. Smelting is one-to-one, so the value is unchanged.
