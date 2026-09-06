@@ -14,8 +14,7 @@ A code-free (`lowcodefml`) NeoForge 1.21.1 mod that adds **ProjectE EMC values**
   the material it was cut from, which ProjectE can't represent — and it protects the tool-building
   loop from being short-circuited by transmutation).
 
-Balance philosophy and the full value table live in
-`~/claude-memory/kuronami-mods/knowledge/MAGITECH_EMC_SPEC.md`.
+Balance philosophy and the full value table are kept with the project's design notes.
 
 ## Build (no compilation — it's a data-only jar)
 
