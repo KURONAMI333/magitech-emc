@@ -3,7 +3,7 @@
 Reads the Magitech jar, transcribes its custom alchemy recipes into ProjectE
 conversions, and emits hand-set EMC for root primitives. Code-free output.
 
-Usage: python tools/generate_emc.py [path/to/magitech-1.1.3.jar]
+Usage: python tools/generate_emc.py path/to/magitech-1.1.3.jar
 ProjectE CustomConversionFile schema (1.21.1): values.before = list of
 {type,emc_value,id}; groups.<g>.conversions[] = {count?, ingredients[{type,id,amount?}], output{type,id}}.
 """
@@ -11,11 +11,12 @@ ProjectE CustomConversionFile schema (1.21.1): values.before = list of
 import sys, json, os, zipfile, glob, tempfile
 from collections import OrderedDict
 
-JAR = (
-    sys.argv[1]
-    if len(sys.argv) > 1
-    else str(__import__('pathlib').Path.home().joinpath('curseforge/minecraft/Instances/2605_nf21_Magi/mods/magitech-1.1.3.jar'))
-)
+USAGE = "Usage: python tools/generate_emc.py path/to/magitech-1.1.3.jar"
+if len(sys.argv) != 2 or sys.argv[1] in ("-h", "--help"):
+    print(USAGE)
+    raise SystemExit(0 if len(sys.argv) == 2 else 1)
+
+JAR = sys.argv[1]
 OUT = os.path.join(
     os.path.dirname(__file__),
     "..",

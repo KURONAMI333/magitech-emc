@@ -1,7 +1,6 @@
-# Magitech ProjectE EMC
+# ProjectE: EMC for Magitech
 
-A code-free (`lowcodefml`) NeoForge 1.21.1 mod that adds **ProjectE EMC values** to
-**Magitech -Arcane Engineering-**. Requires ProjectE and Magitech.
+Give Magitech's ores, crystals, and alchemy products EMC values when playing with ProjectE. This data-only add-on requires both ProjectE and Magitech.
 
 ## What it does
 
@@ -14,28 +13,32 @@ A code-free (`lowcodefml`) NeoForge 1.21.1 mod that adds **ProjectE EMC values**
   the material it was cut from, which ProjectE can't represent — and it protects the tool-building
   loop from being short-circuited by transmutation).
 
-Balance philosophy and the full value table are kept with the project's design notes.
+## Requirements
 
-## Build (no compilation — it's a data-only jar)
+- Minecraft 1.21.1 with NeoForge.
+- [ProjectE](https://www.curseforge.com/minecraft/mc-mods/projecte) and [Magitech](https://modrinth.com/mod/magitech_mod).
+
+Install the matching mods, then place this add-on's JAR in `mods/`. Values become available when the world loads; check them in a Transmutation Table.
+
+## Build from source
+
+The EMC data is included in this repository. Run `./gradlew build` with JDK 21 to package it. To regenerate the data from a Magitech release, provide the JAR explicitly:
 
 ```bash
-python tools/generate_emc.py   # regenerate data/.../magitech.json from the Magitech jar
-./gradlew build                # -> build/libs/magitech_emc-0.1.0.jar
-./gradlew runClient            # dev Minecraft with ProjectE + Magitech (localRuntime) for verification
+python tools/generate_emc.py <path-to-magitech-jar>
+./gradlew build
 ```
 
-`build.gradle` loads ProjectE + Magitech (+ deps) from a local NeoForge 1.21.1 instance via
-`localRuntime` so `runClient` can verify EMC end to end. System JAVA_HOME must allow JDK21 — the
-build pins `org.gradle.java.home` to JDK21 (JDK25 breaks the toolchain).
+For an in-game development run, ProjectE and Magitech must be installed in a matching Minecraft instance. A local `runclient-hosts.gradle` can add host dependencies to Gradle, but that optional file is not part of this repository.
 
-## Verify
+## License
 
-`./gradlew runClient`, then follow `TEST_CHECKLIST.md` (mod loads, ProjectE parses 0 errors,
-Transmutation Table EMC values + tier ordering + tools-have-no-EMC + no exploit).
+[All Rights Reserved](LICENSE). Modpack inclusion is allowed without permission or credit.
 
-## Status
+## Downloads and support
 
-v0.1.0 — gradle build green; runClient runtime-verified (loads, ProjectE parses all conversions
-with 0 errors). **In-game EMC balance pass (values/ordering) pending.** Icon done (`branding/icon.png`,
-64×64 — upscale to ≥256 for store pages). Publishing deferred. First of a planned ProjectE-EMC
-compat series (next targets: Iron's Spellbooks, Forbidden Arcanus, Spectrum, Malum).
+Downloads: [CurseForge](https://www.curseforge.com/minecraft/mc-mods/projecte-emc-for-magitech).
+
+For bugs and questions, comment on the [CurseForge page](https://www.curseforge.com/minecraft/mc-mods/projecte-emc-for-magitech) or DM [@kuronami333 on X](https://x.com/kuronami333).
+
+[Source](https://github.com/KURONAMI333/magitech-emc) · [License](LICENSE)
